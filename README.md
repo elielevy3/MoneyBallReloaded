@@ -4,5 +4,7 @@
 
 # 1 - Make sure streamlit is installed -> pip install streamlit
 
-# 2 - streamlit run scripts/Demo.py
+# 2 - cd MoneyBallReloaded/scripts
+
+# 2 - streamlit run Demo.py
 

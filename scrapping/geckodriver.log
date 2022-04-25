@@ -1,999 +1,236 @@
-1612891898315	geckodriver	INFO	Listening on 127.0.0.1:38925
-1612891898319	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileq8QcmT"
+1627836751325	geckodriver	INFO	Listening on 127.0.0.1:37665
+1627836751328	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKLvvIu"
+1627836752249	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612891901502	Marionette	INFO	Listening on port 34523
-1612891901593	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612891905012	Marionette	INFO	Stopped listening on port 34523
-1612892278424	geckodriver	INFO	Listening on 127.0.0.1:46535
-1612892278431	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9U39ht"
+1627836754454	Marionette	INFO	Listening on port 34895
+1627836754560	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627836783273	Marionette	INFO	Stopped listening on port 34895
+1627836787728	geckodriver	INFO	Listening on 127.0.0.1:35435
+1627836788732	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQAcceL"
+1627836789354	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892280907	Marionette	INFO	Listening on port 33469
-1612892280971	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612892296561	Marionette	INFO	Stopped listening on port 33469
-1612892307467	geckodriver	INFO	Listening on 127.0.0.1:41535
-1612892307470	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9cxLXT"
+1627836791522	Marionette	INFO	Listening on port 40043
+1627836791561	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627836802512	Marionette	INFO	Stopped listening on port 40043
+1627836874652	geckodriver	INFO	Listening on 127.0.0.1:49001
+1627836874669	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRhu44g"
+1627836875500	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892310079	Marionette	INFO	Listening on port 39413
-1612892310145	Marionette	WARN	TLS certificate errors will be ignored for this session
-IPDL protocol error: Handler returned error code!
+1627836877670	Marionette	INFO	Listening on port 38625
+1627836877713	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-1612892314561	Marionette	INFO	Stopped listening on port 39413
-1612892342526	geckodriver	INFO	Listening on 127.0.0.1:39439
-1612892342529	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebzM9FU"
+(firefox:32063): GLib-GObject-WARNING **: 18:54:39.709: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7effb2edb330' of type 'MaiAtkType139'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1627836881184	Marionette	INFO	Stopped listening on port 38625
+1627837017798	geckodriver	INFO	Listening on 127.0.0.1:40393
+1627837017802	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepFgnvE"
+1627837018486	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892345360	Marionette	INFO	Listening on port 36033
-1612892345482	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627837020548	Marionette	INFO	Listening on port 38551
+1627837020634	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-(firefox:4725): GLib-GObject-WARNING **: 18:39:13.040: ../../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7f47eca378d0' of type 'MaiAtkType21'
-1612892355157	Marionette	INFO	Stopped listening on port 36033
-1612892652019	geckodriver	INFO	Listening on 127.0.0.1:34479
-1612892652034	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesMaMW6"
+(firefox:32440): GLib-GObject-WARNING **: 18:57:03.726: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f3b6cfe4150' of type 'MaiAtkType139'
+1627837063440	geckodriver	INFO	Listening on 127.0.0.1:47953
+1627837063446	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1XwT37"
+1627837064246	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892654609	Marionette	INFO	Listening on port 35939
-1612892654677	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612892659050	Marionette	INFO	Stopped listening on port 35939
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1612892726719	geckodriver	INFO	Listening on 127.0.0.1:33289
-1612892726722	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileh2OuYg"
+console.warn: services.settings: main/message-groups sync interrupted by shutdown
+console.error: "Could not load engine duckduckgo@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.error: "Could not load engine wikipedia@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.warn: SearchService: "_init: abandoning init due to shutting down"
+JavaScript error: resource://gre/modules/DeferredTask.jsm, line 215: Error: Unable to arm timer, the object has been finalized.
+JavaScript error: resource://gre/modules/DeferredTask.jsm, line 215: Error: Unable to arm timer, the object has been finalized.
+JavaScript error: resource://gre/modules/DeferredTask.jsm, line 215: Error: Unable to arm timer, the object has been finalized.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+1627837066445	Marionette	FATAL	Remote protocol server failed to start: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIServerSocket.asyncListen]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: chrome://marionette/content/server.js :: set acceptConnections :: line 90"  data: no] Stack trace: set acceptConnections()@server.js:90
+start()@server.js:115
+init/<()@jar:file:///usr/lib/firefox/omni.ja!/components/marionette.js:506
+observe()@resource://gre/modules/AsyncShutdown.jsm:575
+1627837072365	Marionette	INFO	Stopped listening on port 38551
+1627837087087	geckodriver	INFO	Listening on 127.0.0.1:59323
+1627837087098	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile374RzE"
+1627837087999	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892729195	Marionette	INFO	Listening on port 37439
-1612892729282	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612892734348	Marionette	INFO	Stopped listening on port 37439
-1612892776604	geckodriver	INFO	Listening on 127.0.0.1:52773
-1612892776608	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQVEe1v"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892779245	Marionette	INFO	Listening on port 39599
-1612892779387	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612892802576	Marionette	INFO	Stopped listening on port 39599
-1612892838892	geckodriver	INFO	Listening on 127.0.0.1:53107
-1612892838896	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilek4LMpf"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892841450	Marionette	INFO	Listening on port 39425
-1612892841570	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612892845982	Marionette	INFO	Stopped listening on port 39425
-1612892939426	geckodriver	INFO	Listening on 127.0.0.1:54077
-1612892939430	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSeCF6A"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892942161	Marionette	INFO	Listening on port 41539
-1612892942272	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612892946989	Marionette	INFO	Stopped listening on port 41539
+1627837090173	Marionette	INFO	Listening on port 38431
+1627837090230	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1612892954974	geckodriver	INFO	Listening on 127.0.0.1:41279
-1612892954978	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBYV0U7"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892959108	Marionette	INFO	Listening on port 40443
-1612892959139	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612892960995	Marionette	INFO	Stopped listening on port 40443
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1612892967425	geckodriver	INFO	Listening on 127.0.0.1:39857
-1612892967428	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZtNGfu"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612892969841	Marionette	INFO	Listening on port 43443
-1612892969898	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612892979191	Marionette	INFO	Stopped listening on port 43443
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1612893281314	geckodriver	INFO	Listening on 127.0.0.1:46619
-1612893281318	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQakHBl"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893283876	Marionette	INFO	Listening on port 33959
-1612893283974	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893290444	Marionette	INFO	Stopped listening on port 33959
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1612893308976	geckodriver	INFO	Listening on 127.0.0.1:60759
-1612893308979	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGcJv5D"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893311725	Marionette	INFO	Listening on port 41241
-1612893311831	Marionette	WARN	TLS certificate errors will be ignored for this session
+(firefox:446): GLib-GObject-WARNING **: 18:58:12.071: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f0d64b6f470' of type 'MaiAtkType139'
 JavaScript error: chrome://browser/content/browser-customization.js, line 166: NS_ERROR_NOT_INITIALIZED: 
-1612893333258	Marionette	INFO	Stopped listening on port 41241
-1612893351194	geckodriver	INFO	Listening on 127.0.0.1:34207
-1612893351198	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletuTPKH"
+1627837111249	Marionette	INFO	Stopped listening on port 38431
+1627837190867	geckodriver	INFO	Listening on 127.0.0.1:41117
+1627837190870	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileT5I2aI"
+1627837191670	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893353652	Marionette	INFO	Listening on port 45001
-1612893353737	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893381536	geckodriver	INFO	Listening on 127.0.0.1:39649
-1612893381539	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebGIFJo"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893384109	Marionette	INFO	Listening on port 38589
-1612893384182	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893388687	Marionette	INFO	Stopped listening on port 38589
+1627837193690	Marionette	INFO	Listening on port 42543
+1627837193801	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+(firefox:916): GLib-GObject-WARNING **: 18:59:55.763: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7fabc8e925b0' of type 'MaiAtkType139'
+1627837238289	Marionette	INFO	Stopped listening on port 42543
+1627837281167	geckodriver	INFO	Listening on 127.0.0.1:34531
+1627837281176	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledotdnq"
+1627837281949	Marionette	INFO	Marionette enabled
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is FR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1627837284161	Marionette	INFO	Listening on port 32795
+1627837284221	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-1612893407540	geckodriver	INFO	Listening on 127.0.0.1:48835
-1612893407543	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiley1gtdo"
+(firefox:1410): GLib-GObject-WARNING **: 19:01:26.579: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f7834b27ce0' of type 'MaiAtkType139'
+1627837305251	geckodriver	INFO	Listening on 127.0.0.1:58913
+1627837305254	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNYevsS"
+1627837306099	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893410129	Marionette	INFO	Listening on port 36961
-1612893410220	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893419961	Marionette	INFO	Stopped listening on port 36961
-1612893503115	Marionette	INFO	Stopped listening on port 45001
-1612893514056	geckodriver	INFO	Listening on 127.0.0.1:42677
-1612893514060	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGv6LhA"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893516754	Marionette	INFO	Listening on port 44421
-1612893516807	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893524735	Marionette	INFO	Stopped listening on port 44421
-1612893543493	geckodriver	INFO	Listening on 127.0.0.1:50893
-1612893543497	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8bkD5D"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893546058	Marionette	INFO	Listening on port 44737
-1612893546142	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893551372	Marionette	INFO	Stopped listening on port 44737
-1612893615753	geckodriver	INFO	Listening on 127.0.0.1:43833
-1612893615757	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUHX8ly"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893618228	Marionette	INFO	Listening on port 39415
-1612893618299	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893629752	Marionette	INFO	Stopped listening on port 39415
+1627837308159	Marionette	INFO	Listening on port 36057
+1627837308188	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+(firefox:1646): GLib-GObject-WARNING **: 19:01:50.897: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f68f260dfb0' of type 'MaiAtkType139'
+1627837320347	Marionette	INFO	Stopped listening on port 32795
+1627837324086	Marionette	INFO	Stopped listening on port 36057
+1627837427792	geckodriver	INFO	Listening on 127.0.0.1:48463
+1627837428796	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezsfnQX"
+1627837429692	Marionette	INFO	Marionette enabled
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is FR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1627837431887	Marionette	INFO	Listening on port 33155
+1627837431945	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-1612893639050	geckodriver	INFO	Listening on 127.0.0.1:47147
-1612893639080	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerQ9z07"
+(firefox:2317): GLib-GObject-WARNING **: 19:03:54.403: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7ff40faee0b0' of type 'MaiAtkType139'
+1627837456517	geckodriver	INFO	Listening on 127.0.0.1:42007
+1627837457534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletbtHuS"
+1627837458497	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893641566	Marionette	INFO	Listening on port 43545
-1612893641628	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893648136	Marionette	INFO	Stopped listening on port 43545
+1627837461194	Marionette	INFO	Listening on port 38289
+1627837461310	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+(firefox:2711): GLib-GObject-WARNING **: 19:04:23.671: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7fcf45509970' of type 'MaiAtkType139'
+1627837502766	Marionette	INFO	Stopped listening on port 38289
+1627837508049	Marionette	INFO	Stopped listening on port 33155
+1627837751552	geckodriver	INFO	Listening on 127.0.0.1:48465
+1627837751556	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQiPzce"
+1627837752363	Marionette	INFO	Marionette enabled
+console.info: MINT: Trying to use the system region (based on LANG).
+console.info: MINT: System region is FR
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.info: MINT: Loading search-config defaults.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1627837755068	Marionette	INFO	Listening on port 37309
+1627837755187	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-1612893758652	geckodriver	INFO	Listening on 127.0.0.1:42241
-1612893758656	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVKNQkt"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893761489	Marionette	INFO	Listening on port 44627
-1612893761592	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893770493	Marionette	INFO	Stopped listening on port 44627
-1612893829264	geckodriver	INFO	Listening on 127.0.0.1:40431
-1612893829268	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4cURXB"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893831932	Marionette	INFO	Listening on port 44213
-1612893832025	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893835696	Marionette	INFO	Stopped listening on port 44213
-1612893844177	geckodriver	INFO	Listening on 127.0.0.1:39681
-1612893844180	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6ev0VC"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893847108	Marionette	INFO	Listening on port 33673
-1612893847221	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893853017	Marionette	INFO	Stopped listening on port 33673
-1612893877362	geckodriver	INFO	Listening on 127.0.0.1:42263
-1612893877366	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuxQVnD"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893880060	Marionette	INFO	Listening on port 36369
-1612893880197	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893885634	Marionette	INFO	Stopped listening on port 36369
-1612893895943	geckodriver	INFO	Listening on 127.0.0.1:38325
-1612893895947	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTexbk4"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893899148	Marionette	INFO	Listening on port 34613
-1612893899207	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893928456	Marionette	INFO	Stopped listening on port 34613
-1612893931128	geckodriver	INFO	Listening on 127.0.0.1:50531
-1612893931131	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3jPDTM"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893933985	Marionette	INFO	Listening on port 34471
-1612893934083	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893939974	Marionette	INFO	Stopped listening on port 34471
-1612893952334	geckodriver	INFO	Listening on 127.0.0.1:37501
-1612893952338	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCXXTII"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612893955181	Marionette	INFO	Listening on port 42559
-1612893955295	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612893958865	Marionette	INFO	Stopped listening on port 42559
-1612894068223	geckodriver	INFO	Listening on 127.0.0.1:58767
-1612894068227	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile31Grop"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612894070756	Marionette	INFO	Listening on port 42147
-1612894070897	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612894075424	Marionette	INFO	Stopped listening on port 42147
-1612894085074	geckodriver	INFO	Listening on 127.0.0.1:37745
-1612894085077	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenLkd5i"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612894090954	Marionette	INFO	Listening on port 39011
-1612894091028	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612894094976	Marionette	INFO	Stopped listening on port 39011
-1612894117535	geckodriver	INFO	Listening on 127.0.0.1:46579
-1612894117538	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerz98FV"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612894120235	Marionette	INFO	Listening on port 34317
-1612894120294	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612894127561	Marionette	INFO	Stopped listening on port 34317
-1612894252463	geckodriver	INFO	Listening on 127.0.0.1:34071
-1612894252467	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYRr8EW"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612894255008	Marionette	INFO	Listening on port 36091
-1612894255104	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612894259826	Marionette	INFO	Stopped listening on port 36091
-1612894296058	geckodriver	INFO	Listening on 127.0.0.1:33029
-1612894296075	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileo7t31D"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612894298561	Marionette	INFO	Listening on port 42127
-1612894298619	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612894302071	Marionette	INFO	Stopped listening on port 42127
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1612894307963	geckodriver	INFO	Listening on 127.0.0.1:52757
-1612894307966	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFlQENJ"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612894310476	Marionette	INFO	Listening on port 35791
-1612894310512	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612894325403	Marionette	INFO	Stopped listening on port 35791
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1612894327707	geckodriver	INFO	Listening on 127.0.0.1:48523
-1612894327710	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFUSdAC"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1612894330430	Marionette	INFO	Listening on port 36155
-1612894330513	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612894336329	Marionette	INFO	Stopped listening on port 36155
-1618039212724	geckodriver	INFO	Listening on 127.0.0.1:58621
-1618039213736	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIPNgjg"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039216784	Marionette	INFO	Listening on port 40457
-1618039216866	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 109 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 109 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 109 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 109 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/i18n.min.js?screx=1&sxcb=9a&ver=db9a9a37da262883343e941c3731bc67, line 2: TypeError: w is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-1618039370929	geckodriver	INFO	Listening on 127.0.0.1:52285
-1618039370932	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilearguwe"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039373281	Marionette	INFO	Listening on port 44039
-1618039373357	Marionette	WARN	TLS certificate errors will be ignored for this session
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-1618039378925	Marionette	INFO	Stopped listening on port 44039
-console.info: MINT: main/search-config update being skipped
-1618039496001	geckodriver	INFO	Listening on 127.0.0.1:53961
-1618039496004	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZfDLKb"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039498794	Marionette	INFO	Listening on port 46243
-1618039498839	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 197 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 197 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 197 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 197 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-1618039509625	Marionette	INFO	Stopped listening on port 46243
-1618039533827	Marionette	INFO	Stopped listening on port 40457
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1618039619503	geckodriver	INFO	Listening on 127.0.0.1:47161
-1618039620517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejNbeuJ"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039623430	Marionette	INFO	Listening on port 35503
-1618039623547	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618039627854	Marionette	INFO	Stopped listening on port 35503
-1618039731561	geckodriver	INFO	Listening on 127.0.0.1:58483
-1618039731579	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKubGU9"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039734735	Marionette	INFO	Listening on port 40643
-1618039734812	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
-1618039736192	Marionette	INFO	Stopped listening on port 40643
-1618039742720	geckodriver	INFO	Listening on 127.0.0.1:60919
-1618039742723	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekL1VUn"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039745697	Marionette	INFO	Listening on port 36199
-1618039745755	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 277 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 277 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 277 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 277 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-1618039753167	Marionette	INFO	Stopped listening on port 36199
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1618039785496	geckodriver	INFO	Listening on 127.0.0.1:57743
-1618039786512	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOylutY"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039789299	Marionette	INFO	Listening on port 40035
-1618039789344	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618039795707	Marionette	INFO	Stopped listening on port 40035
-1618039848664	geckodriver	INFO	Listening on 127.0.0.1:58793
-1618039848668	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekAmX6p"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039851411	Marionette	INFO	Listening on port 46477
-1618039851496	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618039855939	Marionette	INFO	Stopped listening on port 46477
-1618039869190	geckodriver	INFO	Listening on 127.0.0.1:39357
-1618039869201	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCzwYBY"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039871879	Marionette	INFO	Listening on port 36513
-1618039871946	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618039879646	Marionette	INFO	Stopped listening on port 36513
-1618039891014	geckodriver	INFO	Listening on 127.0.0.1:43789
-1618039892035	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2YQDcl"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039894611	Marionette	INFO	Listening on port 39925
-1618039894691	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618039899306	Marionette	INFO	Stopped listening on port 39925
-1618039920690	geckodriver	INFO	Listening on 127.0.0.1:53319
-1618039920693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemX695e"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039923369	Marionette	INFO	Listening on port 37865
-1618039923430	Marionette	WARN	TLS certificate errors will be ignored for this session
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1618039931292	Marionette	INFO	Stopped listening on port 37865
-1618039985656	geckodriver	INFO	Listening on 127.0.0.1:52551
-1618039985659	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileenRpZn"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618039988348	Marionette	INFO	Listening on port 39071
-1618039988393	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 206 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 206 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 206 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 206 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/i18n.min.js?screx=1&sxcb=9a&ver=db9a9a37da262883343e941c3731bc67, line 2: TypeError: w is undefined
-1618040044597	geckodriver	INFO	Listening on 127.0.0.1:52289
-1618040044601	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebpAAna"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618040047232	Marionette	INFO	Listening on port 37381
-1618040047332	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 262 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 262 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 262 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 262 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-1618040054521	Marionette	INFO	Stopped listening on port 37381
-1618040084731	geckodriver	INFO	Listening on 127.0.0.1:50327
-1618040084734	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePzx7DY"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618040087322	Marionette	INFO	Listening on port 46787
-1618040087372	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618040091829	Marionette	INFO	Stopped listening on port 46787
-1618040156979	geckodriver	INFO	Listening on 127.0.0.1:36235
-1618040157995	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexpTpQG"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618040160734	Marionette	INFO	Listening on port 45375
-1618040160825	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618040165574	Marionette	INFO	Stopped listening on port 45375
-1618040219561	Marionette	INFO	Stopped listening on port 39071
-1618040275979	geckodriver	INFO	Listening on 127.0.0.1:36637
-1618040275985	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUurf6k"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618040278653	Marionette	INFO	Listening on port 36843
-1618040278718	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618040283127	Marionette	INFO	Stopped listening on port 36843
-1618040393002	geckodriver	INFO	Listening on 127.0.0.1:48885
-1618040393005	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJ0i5C5"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618040395544	Marionette	INFO	Listening on port 45025
-1618040395642	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-1618040424607	geckodriver	INFO	Listening on 127.0.0.1:58411
-1618040424617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePlNI6o"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618040427766	Marionette	INFO	Listening on port 37537
-1618040427876	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 128 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 128 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 128 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 128 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/i18n.min.js?screx=1&sxcb=9a&ver=db9a9a37da262883343e941c3731bc67, line 2: TypeError: w is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-1618040447218	geckodriver	INFO	Listening on 127.0.0.1:50469
-1618040448234	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileObdKxk"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618040451455	Marionette	INFO	Listening on port 41795
-1618040451573	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 324 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 324 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 324 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 324 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/i18n.min.js?screx=1&sxcb=9a&ver=db9a9a37da262883343e941c3731bc67, line 2: TypeError: w is undefined
-1618040468532	Marionette	INFO	Stopped listening on port 41795
-1618040471358	Marionette	INFO	Stopped listening on port 37537
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x3A0144,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
-
-1618040473600	Marionette	INFO	Stopped listening on port 45025
-1618040628805	geckodriver	INFO	Listening on 127.0.0.1:57625
-1618040629809	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile34EMMy"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618040632493	Marionette	INFO	Listening on port 38607
-1618040632571	Marionette	WARN	TLS certificate errors will be ignored for this session
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1618040637975	Marionette	INFO	Stopped listening on port 38607
-1618041232710	geckodriver	INFO	Listening on 127.0.0.1:43157
-1618041233715	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezZWV4k"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618041236260	Marionette	INFO	Listening on port 39911
-1618041236342	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618041240302	Marionette	INFO	Stopped listening on port 39911
-1618041432092	geckodriver	INFO	Listening on 127.0.0.1:55183
-1618041433096	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyo74EK"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618041436125	Marionette	INFO	Listening on port 35161
-1618041436231	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 71 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 71 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 71 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 71 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-1618041455474	geckodriver	INFO	Listening on 127.0.0.1:37129
-1618041455477	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKztw3J"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618041458216	Marionette	INFO	Listening on port 42383
-1618041458313	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 343 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 343 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 343 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 343 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/i18n.min.js?screx=1&sxcb=9a&ver=db9a9a37da262883343e941c3731bc67, line 2: TypeError: w is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-1618041552837	Marionette	INFO	Stopped listening on port 42383
-
-(firefox:19589): GLib-GObject-WARNING **: 09:59:13.765: ../../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7faf7db56c90' of type 'MaiAtkType21'
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1618041555091	Marionette	INFO	Stopped listening on port 35161
-1618041711280	geckodriver	INFO	Listening on 127.0.0.1:44993
-1618041711283	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebnLltz"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618041713924	Marionette	INFO	Listening on port 37205
-1618041714014	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 229 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 229 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 229 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 229 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/i18n.min.js?screx=1&sxcb=9a&ver=db9a9a37da262883343e941c3731bc67, line 2: TypeError: w is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1618041794340	Marionette	INFO	Stopped listening on port 37205
-1618041841255	geckodriver	INFO	Listening on 127.0.0.1:46257
-1618041842266	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYGaDna"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618041845062	Marionette	INFO	Listening on port 46581
-1618041845119	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-1618041888222	Marionette	INFO	Stopped listening on port 46581
-1618042073687	geckodriver	INFO	Listening on 127.0.0.1:38263
-1618042074692	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeweVuf"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618042077237	Marionette	INFO	Listening on port 45825
-1618042077325	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618042081152	Marionette	INFO	Stopped listening on port 45825
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1618042144531	geckodriver	INFO	Listening on 127.0.0.1:46985
-1618042144534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemm8EgO"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618042147018	Marionette	INFO	Listening on port 34485
-1618042147080	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618042151848	Marionette	INFO	Stopped listening on port 34485
-1618042217547	geckodriver	INFO	Listening on 127.0.0.1:46801
-1618042217550	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEdPaAO"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618042219965	Marionette	INFO	Listening on port 44949
-1618042220071	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618042224098	Marionette	INFO	Stopped listening on port 44949
-1618042248922	geckodriver	INFO	Listening on 127.0.0.1:40831
-1618042248925	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletdZtx7"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618042251579	Marionette	INFO	Listening on port 39001
-1618042251648	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618042254770	Marionette	INFO	Stopped listening on port 39001
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1618042440454	geckodriver	INFO	Listening on 127.0.0.1:39937
-1618042440457	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2ixGCs"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618042443294	Marionette	INFO	Listening on port 44489
-1618042443384	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 245 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 245 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 245 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 245 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-1618042487451	Marionette	INFO	Stopped listening on port 44489
-1618042588887	geckodriver	INFO	Listening on 127.0.0.1:50669
-1618042589905	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4Ev7Ck"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618042592435	Marionette	INFO	Listening on port 44809
-1618042592555	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 38 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-1618042638487	geckodriver	INFO	Listening on 127.0.0.1:51797
-1618042638492	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepQytdx"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618042641288	Marionette	INFO	Listening on port 39291
-1618042641334	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 278 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 278 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 278 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 278 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/contact-form-7/includes/js/index.js?screx=1&sxcb=9a&ver=5.4, line 1: TypeError: window.wp is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/i18n.min.js?screx=1&sxcb=9a&ver=db9a9a37da262883343e941c3731bc67, line 2: TypeError: w is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-1618042662911	Marionette	INFO	Stopped listening on port 39291
-1618042664352	Marionette	INFO	Stopped listening on port 44809
-1618058195919	geckodriver	INFO	Listening on 127.0.0.1:59805
-1618058195923	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVDktkc"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618058200027	Marionette	INFO	Listening on port 46581
-1618058200077	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 78 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 78 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 78 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 78 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/i18n.min.js?screx=1&sxcb=9a&ver=db9a9a37da262883343e941c3731bc67, line 2: TypeError: w is undefined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
-1618058229769	Marionette	INFO	Stopped listening on port 46581
-1618058231306	geckodriver	INFO	Listening on 127.0.0.1:52313
-1618058231319	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6XjklL"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618058234800	Marionette	INFO	Listening on port 36191
-1618058234878	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 313 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 313 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 313 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 313 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?screx=1&sxcb=9a&ver=1.9.2, line 1: TypeError: a is not a function
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?screx=1&sxcb=9a&ver=2.2.0, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?screx=1&sxcb=9a&ver=2.0.17-1617135091, line 1: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/jquery/jquery-migrate.min.js?screx=1&sxcb=9a&ver=3.3.2, line 2: ReferenceError: jQuery is not defined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/i18n.min.js?screx=1&sxcb=9a&ver=db9a9a37da262883343e941c3731bc67, line 2: TypeError: w is undefined
-JavaScript error: https://basketballnoise.com/wp-includes/js/dist/api-fetch.min.js?screx=1&sxcb=9a&ver=a783d1f442d2abefc7d6dbd156a44561, line 2: TypeError: h.a is undefined
+(firefox:3602): GLib-GObject-WARNING **: 19:09:17.579: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7fae51807970' of type 'MaiAtkType139'
 
 ###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
 
 
 ###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
 
-1618058394234	Marionette	INFO	Stopped listening on port 36191
-1618059702194	geckodriver	INFO	Listening on 127.0.0.1:60853
-1618059703215	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea3dnIJ"
+1627837764835	Marionette	INFO	Stopped listening on port 37309
+1627837827679	geckodriver	INFO	Listening on 127.0.0.1:40061
+1627837828686	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelQS2bk"
+1627837829394	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618059705946	Marionette	INFO	Listening on port 36351
-1618059706074	Marionette	WARN	TLS certificate errors will be ignored for this session
-IPDL protocol error: Handler returned error code!
+1627837831570	Marionette	INFO	Listening on port 41879
+1627837831639	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-1618059710942	Marionette	INFO	Stopped listening on port 36351
-1618061229037	geckodriver	INFO	Listening on 127.0.0.1:58925
-1618061230040	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejBI0AC"
+(firefox:4070): GLib-GObject-WARNING **: 19:10:33.905: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f241f588970' of type 'MaiAtkType139'
+1627837857987	geckodriver	INFO	Listening on 127.0.0.1:58469
+1627837857990	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenxzm3w"
+1627837858893	Marionette	INFO	Marionette enabled
 console.info: MINT: Trying to use the system region (based on LANG).
 console.info: MINT: System region is FR
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 console.info: MINT: Loading search-config defaults.
 JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618061232845	Marionette	INFO	Listening on port 44847
-1618061232877	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 100 > injectedScript, line 2: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 100 > injectedScript, line 2: ReferenceError: _ is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 100 > injectedScript, line 5: ReferenceError: wp is not defined
-JavaScript error: https://basketballnoise.com/nba-players-height-2019-2020/ line 100 > injectedScript, line 2: ReferenceError: wp is not defined
-1618061253102	Marionette	INFO	Stopped listening on port 44847
-1618061261077	geckodriver	INFO	Listening on 127.0.0.1:45593
-1618061261080	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRz0qmJ"
-console.info: MINT: Trying to use the system region (based on LANG).
-console.info: MINT: System region is FR
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-console.info: MINT: Loading search-config defaults.
-JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
-1618061263797	Marionette	INFO	Listening on port 37821
-1618061263939	Marionette	WARN	TLS certificate errors will be ignored for this session
-1618061269731	Marionette	INFO	Stopped listening on port 37821
+1627837860843	Marionette	INFO	Listening on port 38053
+1627837860953	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:4331): GLib-GObject-WARNING **: 19:11:03.868: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f4087a681f0' of type 'MaiAtkType139'
+1627837913115	Marionette	INFO	Stopped listening on port 38053
+1627837915224	Marionette	INFO	Stopped listening on port 41879
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+/home/elie/Documents/MoneyBallReloaded/gecko/geckodriver: error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+For more information try --help
+
+/home/elie/Documents/MoneyBallReloaded/gecko/geckodriver: error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+For more information try --help
+
+/home/elie/Documents/MoneyBallReloaded/gecko/geckodriver: error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+For more information try --help
+
+/home/elie/Documents/MoneyBallReloaded/gecko/geckodriver: error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+For more information try --help
+
+/home/elie/Documents/MoneyBallReloaded/gecko/geckodriver: error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+For more information try --help
+

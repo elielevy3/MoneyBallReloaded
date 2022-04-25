@@ -7,16 +7,14 @@ Created on Sun Apr 11 13:14:15 2021
 """
 import pandas as pd
 import numpy as np
-import time
-import warnings
 import matplotlib.pyplot as plt
 from scipy.spatial import distance
-from Polygone import performance_polygon_vs_player
+# from Polygone import performance_polygon_vs_player
 
-# to check how dit it take
-start_time = time.time()
+# to check how dit it takes
+# start_time = time.time()
 
-def computing_distance_matrix(source, criterias):    
+def computing_distance_matrix(source, criterias):
     player_names = source["Player"]
     
     # we keep the interesting value
@@ -28,21 +26,19 @@ def computing_distance_matrix(source, criterias):
     # our distance matrix
     dist_mat_dict = {}
     
-    #lets compute the distance for every couple of players
+    # let's compute the distance for every couple of players
     for i in range(nb_of_players):
         dist_mat_dict[player_names[i]] = {}
         for j in range(nb_of_players):
             dist_mat_dict[player_names[i]][player_names[j]] = round(distance.euclidean(df.iloc[i], df.iloc[j]), 3)
-    
-    
+
     # list is more convenient for scaling
     # here we have a list of lists
     distance_matrix_list = [list(z.values()) for y,z in dist_mat_dict.items()]
     distance_matrix_list = pd.DataFrame(distance_matrix_list)
     min_of_distance = distance_matrix_list.min().min()
     max_of_distance = distance_matrix_list.max().max()
-    
-        
+
     # we fill back the value from the list to the dict
     for i in range(nb_of_players):
         for j in range(nb_of_players):
@@ -60,8 +56,7 @@ def computing_distance_matrix(source, criterias):
     # lets save it so we do not have to compute everytime
     dist_mat_df = pd.DataFrame(dist_mat_dict)
     dist_mat_df.to_csv("../csv/distance_matrix.csv")
-
-    #return dist_mat_dict
+    # return dist_mat_dict
 
 # return a dict of dict
 def get_distance_between_players(list_of_players, dist_matrix):
@@ -89,7 +84,7 @@ def get_most_similar_players(player_name, nb_of_similar_players_wanted, dist_mat
         index_value = most_similar_players[i][0]
         name = dist_mat["Name"][index_value]
         similarity_confidence = most_similar_players[i][1]
-        most_similar_players[i] = (name,similarity_confidence)
+        most_similar_players[i] = (name, similarity_confidence)
                 
     return most_similar_players
 
@@ -108,32 +103,32 @@ def plot_heat_matrix(only_number_matrix, list_of_players):
     return fig
     
     
-source = pd.read_csv('../csv/players_stats.csv')
-criterias = ['TRB', 'PTS', 'AST', 'DWS', '3PA', "OWS", "USG%", "Height"]
+# source = pd.read_csv('../csv/players_stats.csv')
+# criterias = ['TRB', 'PTS', 'AST', 'DWS', '3PA', "OWS", "USG%", "Height"]
 
-#retrieving the data
-dist_mat = pd.read_csv("../csv/distance_matrix.csv")        
-dist_mat = dist_mat.rename(columns={"Unnamed: 0": 'Name'})
+# #retrieving the data
+# dist_mat = pd.read_csv("../csv/distance_matrix.csv")        
+# dist_mat = dist_mat.rename(columns={"Unnamed: 0": 'Name'})
 
-# get the n most similar player to X and get the similarity values between each and every one of them
-player = "Bradley Beal"
-most_similar_players = get_most_similar_players(player, 4, dist_mat)
-most_similar_players_names = [names for (names, score) in most_similar_players ]
+# # get the n most similar player to X and get the similarity values between each and every one of them
+# player = "Bradley Beal"
+# most_similar_players = get_most_similar_players(player, 4, dist_mat)
+# most_similar_players_names = [names for (names, score) in most_similar_players ]
 
-players_distances = get_distance_between_players(most_similar_players_names, dist_mat)
-only_number_matrix = [list(value.values()) for key, value in players_distances.items()]
+# players_distances = get_distance_between_players(most_similar_players_names, dist_mat)
+# only_number_matrix = [list(value.values()) for key, value in players_distances.items()]
 
-# plot the heat matrix of several players
-plot_heat_matrix(only_number_matrix, most_similar_players_names)
+# # plot the heat matrix of several players
+# plot_heat_matrix(only_number_matrix, most_similar_players_names)
 
-# draw polygones
-players_to_draw = [player[0] for player in most_similar_players]
-players_to_draw.append(player)
-properties = ['OWS', 'DWS', 'AST','TS%', "TRB", "PTS", "3PA" ]
-performance_polygon_vs_player(players_to_draw, properties)
+# # draw polygones
+# players_to_draw = [player[0] for player in most_similar_players]
+# players_to_draw.append(player)
+# properties = ['OWS', 'DWS', 'AST','TS%', "TRB", "PTS", "3PA" ]
+# performance_polygon_vs_player(players_to_draw, properties)
     
 
-# ignore warnings for the polygone display
-warnings.filterwarnings("ignore")
+# # ignore warnings for the polygone display
+# warnings.filterwarnings("ignore")
 
-print("--- %s seconds ---" % round(time.time() - start_time, 2))
+# print("--- %s seconds ---" % round(time.time() - start_time, 2))

@@ -1,0 +1,29 @@
+MoneyBall Reloaded Improvements: 
+
+
+************** TASKS **************
+
+- faire des stats d'equipe pour savoir quelle joueur il leur manque
+- Calculer à la volée les joueurs les plus similaires
+- How toxic is a player contract ?  salary / Per
+- Which player is overpaid / underpaid 
+- Pouvoir rentrer les statistiques à la main et chercher le joeur le plus similaire
+- Paralleliser le calcul de matrice avec Dask
+- Reorganiser l'affichage en onglet ?
+- Rajouter les données plus récentes
+- Detecter les joueurs à transferer au sein d'un equipe (i.e, ceux qui sont le plus similaires aux autre et donc déja remplacé)
+- Enlever les notebook et juste laisser les pdf
+
+************** TO BE DONE **************
+
+- Permettre de pouvoir choisir parmi les colonnes laquelle on veut utiliser pour calculer la matrice
+
+************** DONE **************
+
+
+- recuperer les salaires des joueurs
+- Permettre de supprimer un joueur de la selection des x joueurs à comparer sans enlever les autres
+- Automatiser le data processing quand on modifie des paramètres -> done (juste re-run Data_processing.py)
+- créer une commande pour runner l'import de données (python Data_processing)
+- Checker le pb de path quand on lance demo depuis MoneyBallRealoaded et non depuis scripts
+- Afficher l'age

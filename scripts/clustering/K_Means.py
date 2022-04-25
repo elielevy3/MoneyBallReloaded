@@ -13,13 +13,13 @@ import sklearn
 import sys
 import time
 from sklearn.cluster import KMeans
-sys.path.append("/home/elie/Documents/MoneyballReloaded/scripts")
+sys.path.append("/home/elie/Documents/MoneyBallReloaded/scripts")
 from Polygone import performance_polygon_vs_player
 
 start_time = time.time()
 
 # get the data
-source = pd.read_csv('/home/elie/Documents/MoneyballReloaded/csv/players_stats.csv')
+source = pd.read_csv('/home/elie/Documents/MoneyBallReloaded/csv/players_stats.csv')
 df_to_compute = source.drop(columns=["Unnamed: 0","Player", "final_team","Pos"])
 
 results = pd.DataFrame(data = None, columns = ['score'],dtype=np.float64) 

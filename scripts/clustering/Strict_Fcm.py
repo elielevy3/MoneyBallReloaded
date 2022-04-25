@@ -5,10 +5,10 @@ import pandas as pd
 import sys
 from sklearn_extensions.fuzzy_kmeans import FuzzyKMeans
 
-sys.path.append("/home/elie/Documents/MoneyballReloaded/scripts")
+sys.path.append("/home/elie/Documents/MoneyBallReloaded/scripts")
 from Polygone import performance_polygon_vs_player
 
-df = pd.read_csv('/home/elie/Documents/MoneyballReloaded/csv/players_stats.csv')
+df = pd.read_csv('/home/elie/Documents/MoneyBallReloaded/csv/players_stats.csv')
 player_names = df["Player"]
 
 clustering_df = df.drop(columns=["Unnamed: 0","Player", "final_team","Pos"])

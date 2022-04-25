@@ -11,13 +11,13 @@ from sklearn_extensions.fuzzy_kmeans import FuzzyKMeans
 from sklearn.cluster import DBSCAN
 from sklearn.decomposition import PCA
 
-sys.path.append("/home/elie/Documents/MoneyballReloaded/scripts")
+sys.path.append("/home/elie/Documents/MoneyBallReloaded/scripts")
 from Polygone import performance_polygon_vs_player
 #sns.set()
 
 # need to install kneebow and mlxtend
 
-df = pd.read_csv('/home/elie/Documents/MoneyballReloaded/csv/players_stats.csv')
+df = pd.read_csv('/home/elie/Documents/MoneyBallReloaded/csv/players_stats.csv')
 player_names = df["Player"]
 
 clustering_df = df.drop(columns=["Unnamed: 0","Player", "final_team","Pos"])
@@ -38,7 +38,7 @@ for var_portion in np.arange(start = 0.6,stop=0.95,step=0.05,dtype=np.float64):
                 results = results.append({'var_portion' : var_portion, 'epsilon' : eps , 'min_size' : size , 'score' : score, 'nb_clusters' : max(m.labels_)+1}, ignore_index=True)
 
 results = results.sort_values(by=["score"], ascending = False)
-results.to_csv("/home/elie/Documents/MoneyballReloaded/csv/silhouette_search.csv", sep =';')
+results.to_csv("/home/elie/Documents/MoneyBallReloaded/csv/silhouette_search.csv", sep =';')
 
 optimal_parameters = results.head(1)
 optimal_parameters

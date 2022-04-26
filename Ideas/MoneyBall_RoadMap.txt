@@ -13,6 +13,9 @@ MoneyBall Reloaded Improvements:
 - Rajouter les données plus récentes
 - Detecter les joueurs à transferer au sein d'un equipe (i.e, ceux qui sont le plus similaires aux autre et donc déja remplacé)
 - Enlever les notebook et juste laisser les pdf
+- Enlever les index quand on afficher les joueurs les plus similaires
+- Ajouter un bouton clear selection
+- Regler le pb de /0 quand aucun critére n'est selectionés
 
 ************** TO BE DONE **************
 

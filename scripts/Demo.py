@@ -19,12 +19,14 @@ dist_mat = dist_mat.rename(columns={"Unnamed: 0": 'Name'})
 criterias = ['OWS', 'DWS', 'AST', 'TS%', "TRB", "PTS", "3PA", "BLK"]
 salaries = pd.read_csv("../csv/players_salaries.csv")
 salaries.set_index("Unnamed: 0", inplace=True)
-potential_criterias = ['TS%', '3PAr', 'TRB%', 'USG%', 'OWS', 'DWS', 'Height', 'FGA', '3P', '3PA', '2P',
+potential_criterias = ['MP', 'TS%', '3PAr', 'TRB%', 'USG%', 'OWS', 'DWS', 'Height', 'FGA', '3P', '3PA', '2P',
                        '2PA', 'FT', 'FTA', 'ORB', 'DRB', 'TRB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'PTS']
 
 st.title('MoneyBall Reloaded')
 
 st.header("Pick the criterias that matters the most for you")
+picked_criterias_dict = {}
+picked_criterias_array = []
 i = 0
 number_of_item_per_line = 6
 col_size = np.ones(number_of_item_per_line)
@@ -32,8 +34,13 @@ while i < len(potential_criterias):
     cols = st.beta_columns(col_size)
     for index, col in enumerate(potential_criterias[i:i + number_of_item_per_line]):
         with cols[index]:
-            st.checkbox(col)
+            picked_criterias_dict[col] = st.checkbox(col)
     i = i + number_of_item_per_line
+
+for key, value in picked_criterias_dict.items():
+    if value:
+        picked_criterias_array.append(key)
+
 # st.text("A doubt on what those criterias mean ? ")
 st.write("A doubt on what those criterias mean ? [Check this out](https://www.basketball-reference.com/about/glossary.html)")
 st.markdown("____")
@@ -76,10 +83,10 @@ heat_matrix = plot_heat_matrix(only_number_matrix, most_similar_players_names)
 # draw polygones for the n most similar players
 players_to_draw = [player[0] for player in most_similar_players]
 players_to_draw.append(player)
-polygones = performance_polygon_vs_player(players_to_draw, criterias)
+polygones = performance_polygon_vs_player(players_to_draw, picked_criterias_array)
 
-heat_matrix.savefig("heat_matrix.jpg")
-polygones.savefig("polygones.jpg")
+# heat_matrix.savefig("heat_matrix.jpg")
+# polygones.savefig("polygones.jpg")
 
 
 # Display
@@ -124,7 +131,7 @@ only_number_matrix = [list(value.values()) for key, value in players_distances.i
 heat_matrix = plot_heat_matrix(only_number_matrix, players_list)
 
 # draw polygones for the selected players
-polygones = performance_polygon_vs_player(players_list, criterias)
+polygones = performance_polygon_vs_player(players_list, picked_criterias_array)
 
 # heat_matrix.savefig("heat_matrix.jpg")
 # polygones.savefig("polygones.jpg")

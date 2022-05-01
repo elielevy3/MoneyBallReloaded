@@ -18,7 +18,6 @@ def clean_names(df, col_name):
     df[col_name] = df[col_name] = df[col_name].apply(str.replace, args=[".", ""])
     return df
 
-
 # on recupere les stats de base
 df_2016 = pd.read_csv(csv_files_location + 'NBA_totals_2015-2016.csv')
 df_2017 = pd.read_csv(csv_files_location + 'NBA_totals_2016-2017.csv')
@@ -72,7 +71,7 @@ basic_stats = basic_stats_2016.append(basic_stats_2017).append(basic_stats_2018)
 summed_basic_stats = basic_stats.groupby(['Player']).sum()
 
 # on enleve ceux qui ont joué moins de 30 matches ou 1000 Minutes
-summed_basic_stats = summed_basic_stats.loc[(summed_basic_stats['G'] > 30) | (summed_basic_stats['MP'] > 1000)]
+# summed_basic_stats = summed_basic_stats.loc[(summed_basic_stats['G'] > 100) | (summed_basic_stats['MP'] > 2500)]
 
 
 # on arrondi a un chiffre après la virgule

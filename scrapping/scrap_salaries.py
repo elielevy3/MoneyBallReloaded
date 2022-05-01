@@ -10,6 +10,17 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from unidecode import unidecode
+
+def clean_names(df, col_name):
+    df[col_name] = df[col_name].apply(str.replace, args=[" Jr.", ""])
+    df[col_name] = df[col_name].apply(str.replace, args=[" Sr.", ""])
+    df[col_name] = df[col_name].apply(str.replace, args=[" III", ""])
+    df[col_name] = df[col_name].apply(str.replace, args=[" II", ""])
+    df[col_name] = df[col_name].apply(unidecode)
+    df[col_name] = df[col_name] = df[col_name].apply(str.replace, args=[".", ""])
+    return df
+
 
 # Setting the driver Pour Firefox Linux
 # driver = webdriver.Firefox(executable_path="/home/elie/Documents/MoneyBallReloaded/gecko/geckodriver")
@@ -41,6 +52,8 @@ for player in content.findAll("tr"):
     
 # transform to df and write into csv
 df = pd.DataFrame(list(salaries.items()),columns = ['Name','Salary'])
+df = clean_names(df, "Name")
+df = df.drop_duplicates()
 print("Script to gather players salaries is done.")
 path="/home/elie/Documents/MoneyBallReloaded/csv/players_salaries.csv"
 df.to_csv(path)

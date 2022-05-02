@@ -65,10 +65,6 @@ while i < len(potential_criterias):
             picked_criterias_dict[col] = st.checkbox(col)
     i = i + number_of_item_per_line
 
-# for key, value in picked_criterias_dict.items():
-#     if value:
-#         picked_criterias_array.append(key)
-
 picked_criterias_array = [key for key, value in picked_criterias_dict.items() if value]
 
 if len(picked_criterias_array) == 0:
@@ -92,16 +88,6 @@ number = st.selectbox(
 player_to_compute = stats[stats["Player"] == player][picked_criterias_array]
 most_similar_players = find_most_similar_player_by_criterias(player_to_compute, number, picked_criterias_array)
 
-
-# get the n most similar to the required player
-# most_similar_players = get_most_similar_players(player, number, dist_mat)
-# most_similar_players_names = [names for (names, score) in most_similar_players ]
-# most_similar_players_names.append(player)
-
-# get the distance between the n most similar players of the required player
-# players_distances = get_distance_between_players(most_similar_players_names, dist_mat)
-# only_number_matrix = [list(value.values()) for key, value in players_distances.items()]
-
 # transform to proper df
 df_most_similar_players = pd.DataFrame(most_similar_players)
 
@@ -114,10 +100,7 @@ df_most_similar_players = pd.merge(df_most_similar_players, stats[["Player", "Sa
 df_most_similar_players = pd.merge(df_most_similar_players, players_per, on="Player")
 
 df_most_similar_players.columns = ["Player", "Similarity", "Age", "Salary", "PER"]
-# df_most_similar_players.set_index('Name', inplace=True)
 
-# get the heat matrix of the n most similar players
-# heat_matrix = plot_heat_matrix(only_number_matrix, most_similar_players_names)
 
 # draw polygones for the n most similar players
 players_to_draw = [player[0] for player in most_similar_players]
@@ -127,9 +110,6 @@ if len(picked_criterias_array) == 0:
 
 polygones = performance_polygon_vs_player(players_to_draw, picked_criterias_array)
 
-# heat_matrix.savefig("heat_matrix.jpg")
-# polygones.savefig("polygones.jpg")
-
 df_most_similar_players.index = df_most_similar_players.index + 1
 
 # Display
@@ -138,18 +118,6 @@ st.write(polygones)
 #st.write(heat_matrix)
 
 st.markdown("____")
-
-
-# heat_matrix_image = mpimg.imread('heat_matrix.jpg')
-# polygones_image = mpimg.imread("polygones.jpg")
-
-# col1, col2 = st.beta_columns(2)
-
-# col1.header("Polygones")
-# col1.image(polygones_image, use_column_width=True)
-
-# col2.header("Heat Matrix")
-# col2.image(heat_matrix_image, use_column_width=True)
 
 st.header("Compare the players you want together")
 
@@ -167,22 +135,10 @@ for i in range(nb_of_player_to_compare):
     
 
 # get the distance between the players selected
-# players_distances = get_distance_between_players(players_list, dist_mat)
 players_distances = get_distance_between_players_with_criterias(players_list, picked_criterias_array)
-
-# only_number_matrix = [list(value.values()) for key, value in players_distances.items()]
-
-# get the heat matrix of the selected players
-# heat_matrix = plot_heat_matrix(only_number_matrix, players_list)
 
 # draw polygones for the selected players
 polygones = performance_polygon_vs_player(players_list, picked_criterias_array)
 
-# heat_matrix.savefig("heat_matrix.jpg")
-# polygones.savefig("polygones.jpg")
-
-
 # Display
 st.write(polygones)
-# st.write(heat_matrix)
-

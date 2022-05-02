@@ -8,7 +8,6 @@ from unidecode import unidecode
 
 csv_files_location = "/home/elie/Documents/MoneyBallReloaded/csv/"
 
-
 def clean_names(df, col_name):
     df[col_name] = df[col_name].apply(str.replace, args=[" Jr.", ""])
     df[col_name] = df[col_name].apply(str.replace, args=[" Sr.", ""])
@@ -17,6 +16,7 @@ def clean_names(df, col_name):
     df[col_name] = df[col_name].apply(unidecode)
     df[col_name] = df[col_name] = df[col_name].apply(str.replace, args=[".", ""])
     return df
+
 
 # on recupere les stats de base
 df_2016 = pd.read_csv(csv_files_location + 'NBA_totals_2015-2016.csv')

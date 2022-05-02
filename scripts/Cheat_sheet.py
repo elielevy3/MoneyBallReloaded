@@ -92,6 +92,9 @@ for index, item in enumerate(array):
 
 len(df.index)
 
+# change the type of a whole column
+df = df.astype({"Column_name": str}, errors='raise')
+
 
 # merge 2 df by column values
 # to only keep row in the original df which players value are in the second

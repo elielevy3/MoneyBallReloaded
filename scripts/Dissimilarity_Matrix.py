@@ -11,8 +11,42 @@ import matplotlib.pyplot as plt
 from scipy.spatial import distance
 # from Polygone import performance_polygon_vs_player
 
-# to check how dit it takes
-# start_time = time.time()
+# list of players with all the stats we have
+stats = pd.read_csv("../csv/players_stats.csv")
+
+
+def find_most_similar_player_by_criterias(player_stats, nb_most_similar, criterias):
+    player_names = stats["Player"]
+
+    # we keep the interesting value
+    df = stats[criterias]
+
+    # number of player in the df
+    nb_of_players = len(df.index)
+
+    # our distance matrix
+    dist_mat_dict = {}
+
+    for i in range(nb_of_players):
+        dist = round(distance.euclidean(df.iloc[i], player_stats), 3)
+        dist_mat_dict[player_names[i]] = dist
+
+    # sorting the distance (ascending order)
+    dist_mat_dict = {k: v for k, v in sorted(dist_mat_dict.items(), key=lambda item: item[1])}
+
+    # get max and min to scale
+    nb_most_similar_values = list(dist_mat_dict.values())
+    min_value = min(nb_most_similar_values)
+    max_value = max(nb_most_similar_values)
+
+    # just keep the nth most similar
+    dist_mat_dict = {k: v for k, v in list(dist_mat_dict.items())[1:nb_most_similar+1]}
+
+    # scaling + project onto a 0-100 score
+    dist_mat_dict = {k: round(abs(1-(v - min_value)/(max_value-min_value)) * 100, 2) for k, v in dist_mat_dict.items()}
+
+    return dist_mat_dict.items()
+
 
 def computing_distance_matrix(source, criterias):
     player_names = source["Player"]
@@ -58,9 +92,10 @@ def computing_distance_matrix(source, criterias):
     dist_mat_df.to_csv("../csv/distance_matrix.csv")
     # return dist_mat_dict
 
+
 # return a dict of dict
 def get_distance_between_players(list_of_players, dist_matrix):
-    #lets sort it to have the same order on both axis
+    # lets sort it to have the same order on both axis
     list_of_players = sorted(list_of_players)
     dist_mat_dict = {}
     for player in list_of_players:
@@ -70,7 +105,40 @@ def get_distance_between_players(list_of_players, dist_matrix):
             
     return dist_mat_dict
 
-#return a list of 2-elements tuples (name, similarity score)
+
+def get_distance_between_players_with_criterias(list_of_players, criterias):
+    # we add player name
+    enlarged_criterias = [value for value in criterias]
+    enlarged_criterias.append("Player")
+    enlarged_criterias_df = stats[enlarged_criterias]
+    cross_player_dict = {}
+
+    for player in list_of_players:
+        dict_of_dist_per_player = {}
+        # for every player, we compute distance with every other players to get the mix and max in order to normalize
+        # for this given player
+        player_stat = enlarged_criterias_df[enlarged_criterias_df["Player"] == player][criterias]
+        for row in enlarged_criterias_df.itertuples():
+            # remove the first column (the index) and the last one (name)
+            row_stats = row[1:-1]
+            dist = round(distance.euclidean(player_stat, row_stats), 3)
+            dict_of_dist_per_player[row.Player] = dist
+
+        # get the min and max
+        list_of_dist_for_one_player = list(dict_of_dist_per_player.values())
+        min_value = min(list_of_dist_for_one_player)
+        max_value = max(list_of_dist_for_one_player)
+
+        cross_player_dict[player] = {}
+        # normalize distance row-wise (for one given player)
+        for player_2 in list_of_players:
+            normalized_value = round(abs(1-(dict_of_dist_per_player[player_2]-min_value)/(max_value-min_value))*100, 2)
+            cross_player_dict[player][player_2] = normalized_value
+
+    return cross_player_dict
+
+
+# return a list of 2-elements tuples (name, similarity score)
 def get_most_similar_players(player_name, nb_of_similar_players_wanted, dist_mat):
     
     #lets sort the list of similarity between player and the rest of the NBA

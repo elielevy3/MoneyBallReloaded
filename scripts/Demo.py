@@ -4,7 +4,8 @@
 Created on Sun Apr 25 18:20:27 2021
 
 @author: elie
-""" 
+"""
+import time
 import streamlit as st
 # To make things easier later, we're also importing numpy and pandas for
 # working with sample data.
@@ -12,7 +13,8 @@ import pandas as pd
 import numpy as np
 from unidecode import unidecode
 from Polygone import performance_polygon_vs_player
-from Dissimilarity_Matrix import get_most_similar_players, plot_heat_matrix, get_distance_between_players
+from Dissimilarity_Matrix import get_most_similar_players, plot_heat_matrix, \
+    get_distance_between_players, find_most_similar_player_by_criterias, get_distance_between_players_with_criterias
 
 
 def clean_names(df, col_name):
@@ -44,6 +46,11 @@ players_age = pd.read_csv("../csv/NBA_totals_2019-2020.csv")[["Player", "Age"]]
 players_age = clean_names(players_age, "Player")
 players_age = players_age.drop_duplicates()
 
+# get avg PER of every player on the last years
+players_per = pd.read_csv("../csv/unscaled_aggregated_stats.csv")
+players_per = players_per[["Player", "PER"]]
+
+# displaying
 st.title('MoneyBall Reloaded')
 st.header("Pick the criterias that matters the most for you")
 picked_criterias_dict = {}
@@ -58,9 +65,11 @@ while i < len(potential_criterias):
             picked_criterias_dict[col] = st.checkbox(col)
     i = i + number_of_item_per_line
 
-for key, value in picked_criterias_dict.items():
-    if value:
-        picked_criterias_array.append(key)
+# for key, value in picked_criterias_dict.items():
+#     if value:
+#         picked_criterias_array.append(key)
+
+picked_criterias_array = [key for key, value in picked_criterias_dict.items() if value]
 
 if len(picked_criterias_array) == 0:
     picked_criterias_array.append("PTS")
@@ -78,14 +87,20 @@ player = st.selectbox(
 number = st.selectbox(
     'How many players do you want among the most similar?', np.arange(1, 10, 1))
 
+
 # get the n most similar to the required player
-most_similar_players = get_most_similar_players(player, number, dist_mat)
-most_similar_players_names = [names for (names, score) in most_similar_players ]
-most_similar_players_names.append(player)
+player_to_compute = stats[stats["Player"] == player][picked_criterias_array]
+most_similar_players = find_most_similar_player_by_criterias(player_to_compute, number, picked_criterias_array)
+
+
+# get the n most similar to the required player
+# most_similar_players = get_most_similar_players(player, number, dist_mat)
+# most_similar_players_names = [names for (names, score) in most_similar_players ]
+# most_similar_players_names.append(player)
 
 # get the distance between the n most similar players of the required player
-players_distances = get_distance_between_players(most_similar_players_names, dist_mat)
-only_number_matrix = [list(value.values()) for key, value in players_distances.items()]
+# players_distances = get_distance_between_players(most_similar_players_names, dist_mat)
+# only_number_matrix = [list(value.values()) for key, value in players_distances.items()]
 
 # transform to proper df
 df_most_similar_players = pd.DataFrame(most_similar_players)
@@ -96,7 +111,9 @@ df_most_similar_players = pd.merge(df_most_similar_players, players_age, on="Pla
 
 df_most_similar_players = pd.merge(df_most_similar_players, stats[["Player", "Salaries"]], on="Player")
 
-df_most_similar_players.columns = ["Player", "Similarity", "Age", "Salary"]
+df_most_similar_players = pd.merge(df_most_similar_players, players_per, on="Player")
+
+df_most_similar_players.columns = ["Player", "Similarity", "Age", "Salary", "PER"]
 # df_most_similar_players.set_index('Name', inplace=True)
 
 # get the heat matrix of the n most similar players
@@ -116,7 +133,7 @@ polygones = performance_polygon_vs_player(players_to_draw, picked_criterias_arra
 df_most_similar_players.index = df_most_similar_players.index + 1
 
 # Display
-st.table(df_most_similar_players[["Player", "Similarity", "Age", "Salary"]])
+st.table(df_most_similar_players[["Player", "Similarity", "Age", "Salary", "PER"]])
 st.write(polygones)
 #st.write(heat_matrix)
 
@@ -150,8 +167,10 @@ for i in range(nb_of_player_to_compare):
     
 
 # get the distance between the players selected
-players_distances = get_distance_between_players(players_list, dist_mat)
-only_number_matrix = [list(value.values()) for key, value in players_distances.items()]
+# players_distances = get_distance_between_players(players_list, dist_mat)
+players_distances = get_distance_between_players_with_criterias(players_list, picked_criterias_array)
+
+# only_number_matrix = [list(value.values()) for key, value in players_distances.items()]
 
 # get the heat matrix of the selected players
 # heat_matrix = plot_heat_matrix(only_number_matrix, players_list)

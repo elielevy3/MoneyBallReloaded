@@ -184,6 +184,8 @@ final_advanced = final_advanced.set_index("Player")
 
 final_advanced.columns = ["G", "MP", "PER", "TS%", "3PAr", "TRB%", "USG%", "OWS", "DWS", "Height"]
 
+final_advanced.to_csv("../csv/unscaled_aggregated_stats.csv")
+
 # Scaling
 final_advanced_scaled = final_advanced - final_advanced.min()
 final_advanced_scaled = final_advanced_scaled / (final_advanced_scaled.max() - final_advanced_scaled.min())

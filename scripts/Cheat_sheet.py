@@ -321,3 +321,5 @@ my_model.fit(X_train, y_train,
              eval_set=[(X_valid, y_valid)], 
              verbose=False)
 
+# check if array is empty
+if len(arr) == 0

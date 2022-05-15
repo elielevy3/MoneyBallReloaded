@@ -8,6 +8,7 @@ from unidecode import unidecode
 
 csv_files_location = "/home/elie/Documents/MoneyBallReloaded/csv/"
 
+
 def clean_names(df, col_name):
     df[col_name] = df[col_name].apply(str.replace, args=[" Jr.", ""])
     df[col_name] = df[col_name].apply(str.replace, args=[" Sr.", ""])
@@ -17,6 +18,13 @@ def clean_names(df, col_name):
     df[col_name] = df[col_name] = df[col_name].apply(str.replace, args=[".", ""])
     return df
 
+
+# latest data
+advance_2021 = pd.read_csv(csv_files_location + 'nba2021_advanced.csv')
+per_36_minutes_2021 = pd.read_csv(csv_files_location + 'nba2021_per36min.csv')
+per_game_2021 = pd.read_csv(csv_files_location + 'nba2021_per_game.csv')
+
+test = per_game_2021["G"].sort_values()
 
 # on recupere les stats de base
 df_2016 = pd.read_csv(csv_files_location + 'NBA_totals_2015-2016.csv')
@@ -71,7 +79,7 @@ basic_stats = basic_stats_2016.append(basic_stats_2017).append(basic_stats_2018)
 summed_basic_stats = basic_stats.groupby(['Player']).sum()
 
 # on enleve ceux qui ont joué moins de 30 matches ou 1000 Minutes
-# summed_basic_stats = summed_basic_stats.loc[(summed_basic_stats['G'] > 100) | (summed_basic_stats['MP'] > 2500)]
+summed_basic_stats = summed_basic_stats.loc[(summed_basic_stats['G'] > 30) | (summed_basic_stats['MP'] > 500)]
 
 
 # on arrondi a un chiffre après la virgule
@@ -89,11 +97,14 @@ avg_stats_36_minutes = avg_stats.div((avg_stats["MP"] / 36), axis=0)
 avg_stats_36_minutes = avg_stats_36_minutes.apply(custom_round_up, args=[1])
 names = pd.DataFrame(avg_stats_36_minutes.index)
 
+avg_stats_36_minutes.to_csv("../csv/avg_stats_36_minutes_unscaled.csv")
+
 # Scaling
 avg_stats_36_minutes = avg_stats_36_minutes - avg_stats_36_minutes.min()
 avg_stats_36_minutes = avg_stats_36_minutes / (avg_stats_36_minutes.max() - avg_stats_36_minutes.min())
 avg_stats_36_minutes = avg_stats_36_minutes.apply(custom_round_up, args=[2])
 avg_stats_36_minutes_scaled = avg_stats_36_minutes.drop(columns=["MP"])
+
 
 # on recupere les stats avancées
 ad_2016 = pd.read_csv(csv_files_location + 'NBA_advanced_2015-2016.csv')
@@ -160,10 +171,8 @@ agr = {'MP': ['sum'], 'G': ['sum'], 'PER': ['sum'], 'TS%': ['sum'], '3PAr': ['su
        'OWS': ['sum'], 'DWS': ['sum']}
 agg_advanced = summed_ad.groupby(['Player']).agg(agr)
 
-# on enleve ceux qui ont joué moins de 100 matches => c'est pour cela qu'on a moins de joueurs à la fin!!!!
-# agg_advanced = agg_advanced.loc[(agg_advanced["MP"]["sum"] > 25) | (agg_advanced["G"]["sum"] > 1)]
-
-# agg_advanced = agg_advanced.loc[(agg_advanced['G']["sum"] > 100) & (agg_advanced['MP']["sum"] > 2500) ]
+# on enleve ceux qui ont joué moins de 30 matches => c'est pour cela qu'on a moins de joueurs à la fin!!!!
+agg_advanced = agg_advanced.loc[(agg_advanced['G']["sum"] > 30) & (agg_advanced['MP']["sum"] > 500)]
 
 # lets retrieve the players height
 heights = pd.read_csv(csv_files_location + "players_height.csv")
@@ -173,7 +182,7 @@ heights = heights.rename(columns={"Name": "Player"})
 
 # on ramene les stats par matches
 games = agg_advanced["G"]["sum"]
-final_advanced = agg_advanced.div((games), axis=0)
+final_advanced = agg_advanced.div(games, axis=0)
 final_advanced = final_advanced.drop(columns=["G"])
 final_advanced = final_advanced.apply(custom_round_up, args=[2])
 final_advanced = pd.concat([games, final_advanced], axis=1)
@@ -182,8 +191,8 @@ final_advanced = pd.concat([games, final_advanced], axis=1)
 final_advanced = pd.merge(final_advanced, heights, on="Player")
 final_advanced = final_advanced.set_index("Player")
 
+# save to csv
 final_advanced.columns = ["G", "MP", "PER", "TS%", "3PAr", "TRB%", "USG%", "OWS", "DWS", "Height"]
-
 final_advanced.to_csv("../csv/unscaled_aggregated_stats.csv")
 
 # Scaling

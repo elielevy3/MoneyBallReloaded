@@ -3,24 +3,13 @@ MoneyBall Reloaded Improvements:
 
 ************** TASKS **************
 
-- faire des stats d'equipe pour savoir quelle joueur il leur manque
-- Calculer à la volée les joueurs les plus similaires
-- How toxic is a player contract ?  salary / Per
-- Which player is overpaid / underpaid 
-- Pouvoir rentrer les statistiques à la main et chercher le joeur le plus similaire
-- Paralleliser le calcul de matrice avec Dask
-- Reorganiser l'affichage en onglet ?
+- Deployer sur OVH
+- mettre les commententaires en anglais
 - Rajouter les données plus récentes
-- Detecter les joueurs à transferer au sein d'un equipe (i.e, ceux qui sont le plus similaires aux autre et donc déja remplacé)
-- Enlever les notebook et juste laisser les pdf
-- Ajouter un bouton clear selection
-- Vérifier que salaire est correct
 
 ************** TO BE DONE **************
 
-- Enlever les index quand on afficher les joueurs les plus similaires
-- pre-traitement sur les joueurs pour df_age et df_salaries
-- Regler le pb des joueurs manquant dans age et salaries
+- reduire la taille des champs pour créer un joueur fictif
 
 ************** DONE **************
 
@@ -32,3 +21,16 @@ MoneyBall Reloaded Improvements:
 - Checker le pb de path quand on lance demo depuis MoneyBallRealoaded et non depuis scripts
 - Afficher l'age
 - Regler le pb de /0 quand aucun critére n'est selectionés
+- Regler le pb des joueurs manquant dans age et salaries
+- pre-traitement sur les joueurs pour df_age et df_salaries
+- Enlever les index quand on afficher les joueurs les plus similaires
+- Ajouter PER
+- Vérifier que salaire est correct
+- Calculer à la volée les joueurs les plus similaires
+- Which player is overpaid / underpaid
+- Calculer a la volee la distance entre les joueurs selectionnés
+- Enlever les notebook et juste laisser les pdf
+- Faire glisser la fenetre de selection des features en meme temps qu'on scroll down (sticky) (done with re-arranging the display on the website)
+- mettre un filtre sur le nb de match/minutes minimum
+- Pouvoir rentrer les statistiques à la main et chercher le joueur le plus similaire
+- Ajouter MP dans le csv des joueurs scalées pour inclure le volume de jeu comme critere de selection

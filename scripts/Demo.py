@@ -99,33 +99,13 @@ df_most_similar_players = pd.DataFrame(most_similar_players)
 
 df_most_similar_players.columns = ["Player", "Similarity"]
 
-print("-------------------------------")
-print("1: "+str(df_most_similar_players))
-print("-------------------------------")
-
 df_most_similar_players = pd.merge(df_most_similar_players, players_age, on="Player")
-
-print("-------------------------------")
-print("2: "+str(df_most_similar_players))
-print("-------------------------------")
 
 df_most_similar_players = pd.merge(df_most_similar_players, stats[["Player", "Salaries"]], on="Player")
 
-print("-------------------------------")
-print("3: "+str(df_most_similar_players))
-print("-------------------------------")
-
 df_most_similar_players = pd.merge(df_most_similar_players, players_per, on="Player")
 
-print("-------------------------------")
-print("4: "+str(df_most_similar_players))
-print("-------------------------------")
-
 df_most_similar_players.columns = ["Player", "Similarity", "Age", "Salary", "PER"]
-
-print("-------------------------------")
-print("5: "+str(df_most_similar_players))
-print("-------------------------------")
 
 # draw polygones for the n most similar players
 players_to_draw = [player[0] for player in most_similar_players]
@@ -219,8 +199,6 @@ fictive_player_stats_pd.columns = fictive_player_criterias_array
 unscaled_advanced_data = pd.read_csv("../csv/unscaled_aggregated_stats.csv")
 unscaled_basic_data = pd.read_csv("../csv/avg_stats_36_minutes_unscaled.csv")
 
-# print(fictive_player_stats_pd)
-# print(fictive_player_criterias_array)
 fictive_player_stats_array = []
 
 # we need to bring the stats back to a 36mn basis
@@ -232,18 +210,12 @@ fictive_player_criterias_array.remove("MP")
 if len(fictive_player_criterias_array) != 0:
     unscaled_basic_data = unscaled_basic_data[fictive_player_criterias_array]
     for col in fictive_player_criterias_array:
-        # print("col : " + col)
         val = int(fictive_player_stats_pd[col].tolist()[0])
         min_value = unscaled_basic_data[col].min()
         max_value = unscaled_basic_data[col].max()
-        # print("Max : " + str(max_value))
-        # print("Min : " + str(min_value))
         fictive_player_stats_array.append((val - min_value) / (max_value - min_value))
     nb_of_player_to_compare_to_fictive = c3.selectbox('How many similar players do you want ? ', np.arange(1, 10, 1))
 
-    print(fictive_player_stats_array)
-    print(nb_of_player_to_compare_to_fictive)
-    print(fictive_player_criterias_array)
     similar_players_to_fictive = find_most_similar_player_by_criterias(fictive_player_stats_array, nb_of_player_to_compare_to_fictive, fictive_player_criterias_array)
 
     # transform to proper df

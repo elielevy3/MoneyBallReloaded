@@ -7,17 +7,14 @@ Created on Sun Apr 25 18:20:27 2021
 """
 import time
 import streamlit as st
-# To make things easier later, we're also importing numpy and pandas for
-# working with sample data.
+# To make things easier later, we're also importing numpy and pandas for working with sample data.
 import pandas as pd
 import numpy as np
 from unidecode import unidecode
 from Polygone import performance_polygon_vs_player
-from Dissimilarity_Matrix import get_most_similar_players, plot_heat_matrix, \
-    get_distance_between_players, find_most_similar_player_by_criterias, get_distance_between_players_with_criterias
+from Dissimilarity_Matrix import find_most_similar_player_by_criterias, get_distance_between_players_with_criterias
 
 st.set_page_config(layout="wide")
-
 
 def clean_names(df, col_name):
     df[col_name] = df[col_name].apply(str.replace, args=[" Jr.", ""])
@@ -73,12 +70,10 @@ picked_criterias_array = [key for key, value in picked_criterias_dict.items() if
 if len(picked_criterias_array) == 0:
     picked_criterias_array.append("PTS")
 
-# st.text("A doubt on what those criterias mean ? ")
 st.write(
     "A doubt on what those criterias mean ? [Check this out](https://www.basketball-reference.com/about/glossary.html)")
 st.markdown("____")
 
-# c1 = st.container()
 c1, c0, c2 = st.columns((2, 1, 2))
 
 c1.header("Find the most similar players to a player")
@@ -120,11 +115,8 @@ df_most_similar_players.index = df_most_similar_players.index + 1
 # Display
 c1.table(df_most_similar_players[["Player", "Similarity", "Age", "Salary", "PER"]])
 c1.write(polygones)
-# st.write(heat_matrix)
 
 st.markdown("____")
-
-# c2 = st.container()
 
 c2.header("Compare the players you want together")
 c2.text("")
@@ -160,13 +152,6 @@ c3, c4 = st.columns((2, 3))
 c3.header("Describe the player you need")
 fictive_player_criterias_dict = {}
 
-
-# let's add Minutes played automatically so we can put it back on 36 mn afterwards
-
-# picked_criterias_array.append("MP")
-# picked_criterias_array = list(set(picked_criterias_array))
-
-
 # intersect picked criterias for fictive player with basic criterias because users will not fill advanced stats
 fictive_player_criterias_array = [elem for elem in set([k for k, v in picked_criterias_dict.items() if v]) if
                                   elem in set(basic_criterias)]
@@ -200,8 +185,6 @@ unscaled_advanced_data = pd.read_csv("../csv/unscaled_aggregated_stats.csv")
 unscaled_basic_data = pd.read_csv("../csv/avg_stats_36_minutes_unscaled.csv")
 
 fictive_player_stats_array = []
-
-# we need to bring the stats back to a 36mn basis
 
 # we dont want to scale the nb of minute
 fictive_player_criterias_array.remove("MP")

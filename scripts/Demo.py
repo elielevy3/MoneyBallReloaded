@@ -10,25 +10,33 @@ import streamlit as st
 # To make things easier later, we're also importing numpy and pandas for working with sample data.
 import pandas as pd
 import numpy as np
-from unidecode import unidecode
+import unidecode
 from Polygone import performance_polygon_vs_player
 from Dissimilarity_Matrix import find_most_similar_player_by_criterias, get_distance_between_players_with_criterias
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_icon="🏀", page_title="MoneyBall Reloaded")
 
 def clean_names(df, col_name):
     df[col_name] = df[col_name].apply(str.replace, args=[" Jr.", ""])
     df[col_name] = df[col_name].apply(str.replace, args=[" Sr.", ""])
     df[col_name] = df[col_name].apply(str.replace, args=[" III", ""])
     df[col_name] = df[col_name].apply(str.replace, args=[" II", ""])
-    df[col_name] = df[col_name].apply(unidecode)
+    df[col_name] = df[col_name].apply(unidecode.unidecode)
     df[col_name] = df[col_name] = df[col_name].apply(str.replace, args=[".", ""])
     return df
 
+@st.experimental_memo
+def get_player_stats():
+    return pd.read_csv("../csv/players_stats.csv")
 
-stats = pd.read_csv("../csv/players_stats.csv")
+@st.experimental_memo
+def get_player_salaries():
+    return pd.read_csv("../csv/players_salaries.csv")
+
+
+stats = get_player_stats()
 initial_criterias = ['OWS', 'DWS', 'AST', 'TS%', "TRB", "PTS", "3PA", "BLK"]
-salaries = pd.read_csv("../csv/players_salaries.csv")
+salaries = get_player_salaries()
 salaries.set_index("Unnamed: 0", inplace=True)
 potential_criterias = ['MP', 'TS%', '3PAr', 'TRB%', 'USG%', 'OWS', 'DWS', 'Height', 'FGA', '3P', '3PA', '2P',
                        '2PA', 'FT', 'FTA', 'ORB', 'DRB', 'TRB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'PTS']
@@ -51,21 +59,24 @@ players_per = pd.read_csv("../csv/unscaled_aggregated_stats.csv")
 players_per = players_per[["Player", "PER"]]
 
 # displaying
-st.title('MoneyBall Reloaded')
-st.header("Pick the criterias that matters the most for you")
-picked_criterias_dict = {}
-picked_criterias_array = []
-i = 0
-number_of_item_per_line = 6
-col_size = np.ones(number_of_item_per_line)
-while i < len(potential_criterias):
-    cols = st.columns(col_size)
-    for index, col in enumerate(potential_criterias[i:i + number_of_item_per_line]):
-        with cols[index]:
-            picked_criterias_dict[col] = st.checkbox(col)
-    i = i + number_of_item_per_line
+st.title('MoneyBall Reloaded 🏀')
+# st.header("Pick the criterias that matters the most for you")
+# picked_criterias_dict = {}
+# picked_criterias_array = []
+# i = 0
+# number_of_item_per_line = 6
+# col_size = np.ones(number_of_item_per_line)
+# while i < len(potential_criterias):
+#     cols = st.columns(col_size)
+#     for index, col in enumerate(potential_criterias[i:i + number_of_item_per_line]):
+#         with cols[index]:
+#             picked_criterias_dict[col] = st.checkbox(col)
+#     i = i + number_of_item_per_line
 
-picked_criterias_array = [key for key, value in picked_criterias_dict.items() if value]
+
+picked_criterias_array = st.sidebar.multiselect("Pick the criterias", potential_criterias)
+
+# picked_criterias_array = [key for key, value in picked_criterias_dict.items() if value]
 
 if len(picked_criterias_array) == 0:
     picked_criterias_array.append("PTS")
@@ -74,9 +85,13 @@ st.write(
     "A doubt on what those criterias mean ? [Check this out](https://www.basketball-reference.com/about/glossary.html)")
 st.markdown("____")
 
-c1, c0, c2 = st.columns((2, 1, 2))
+#c1, c3, c2 = st.tabs(["Find the most similar players to a player", "Describe the player you need", "Compare the players you want together"])
 
-c1.header("Find the most similar players to a player")
+c1, _, c3, _, c2 = st.columns([8, 1,  8, 1, 8])
+
+polygone_col_1, _, polygone_col_2, _, polygone_col_3 = st.columns([8, 1,  8, 1, 8])
+
+c1.header("Find the most similar players to a given one")
 c1.text("")
 
 player = c1.selectbox(
@@ -88,6 +103,7 @@ number = c1.selectbox(
 # get the n most similar to the required player
 player_to_compute = stats[stats["Player"] == player][picked_criterias_array]
 most_similar_players = find_most_similar_player_by_criterias(player_to_compute, number, picked_criterias_array)
+
 
 # transform to proper df
 df_most_similar_players = pd.DataFrame(most_similar_players)
@@ -114,9 +130,11 @@ df_most_similar_players.index = df_most_similar_players.index + 1
 
 # Display
 c1.table(df_most_similar_players[["Player", "Similarity", "Age", "Salary", "PER"]])
-c1.write(polygones)
 
-st.markdown("____")
+#c1.write(polygones)
+polygone_col_1.write(polygones)
+
+#st.markdown("____")
 
 c2.header("Compare the players you want together")
 c2.text("")
@@ -136,6 +154,7 @@ for i in range(nb_of_player_to_compare):
 # get the distance between the players selected
 players_distances = get_distance_between_players_with_criterias(players_list, picked_criterias_array)
 
+
 c2.markdown("#")
 c2.markdown("#")
 c2.markdown("#")
@@ -143,18 +162,36 @@ c2.markdown("#")
 # draw polygones for the selected players
 polygones = performance_polygon_vs_player(players_list, picked_criterias_array)
 
-# Display
-c2.write(polygones)
 
-c3, c4 = st.columns((2, 3))
+df_most_similar_players = pd.DataFrame(players_list)
+
+df_most_similar_players.columns = ["Player"]
+
+df_most_similar_players = pd.merge(df_most_similar_players, players_age, on="Player")
+
+df_most_similar_players = pd.merge(df_most_similar_players, stats[["Player", "Salaries"]], on="Player")
+
+df_most_similar_players = pd.merge(df_most_similar_players, players_per, on="Player")
+
+df_most_similar_players.columns = ["Player", "Age", "Salary", "PER"]
+
+c2.write(df_most_similar_players)
+#c2.write(polygones)
+polygone_col_3.write(polygones)
+#c3, c4 = st.columns((2, 3))
 
 # Describe the player you would like
 c3.header("Describe the player you need")
+nb_of_player_to_compare_to_fictive = c3.selectbox('How many similar players do you want ? ', np.arange(1, 10, 1))
+c3.write("------")
+
 fictive_player_criterias_dict = {}
 
 # intersect picked criterias for fictive player with basic criterias because users will not fill advanced stats
-fictive_player_criterias_array = [elem for elem in set([k for k, v in picked_criterias_dict.items() if v]) if
+fictive_player_criterias_array = [elem for elem in set(picked_criterias_array) if
                                   elem in set(basic_criterias)]
+
+#fictive_player_criterias_array = picked_criterias_array
 fictive_player_criterias_array.append("MP")
 
 # declaring variables to display the selected criterias
@@ -169,7 +206,7 @@ while i < len(fictive_player_criterias_array):
     cols_fictive_player = st.columns(col_size_fictive_player)
     for index, col in enumerate(fictive_player_criterias_array[i:i + number_of_item_per_line_fictive_player]):
         with cols_fictive_player[index]:
-            fictive_player_criterias_dict[col] = c3.number_input(col)
+            fictive_player_criterias_dict[col] = c3.number_input(col, step=1)
     i = i + number_of_item_per_line_fictive_player
 
 
@@ -192,12 +229,12 @@ fictive_player_criterias_array.remove("MP")
 # scaling the new fictive player
 if len(fictive_player_criterias_array) != 0:
     unscaled_basic_data = unscaled_basic_data[fictive_player_criterias_array]
+    
     for col in fictive_player_criterias_array:
         val = int(fictive_player_stats_pd[col].tolist()[0])
         min_value = unscaled_basic_data[col].min()
         max_value = unscaled_basic_data[col].max()
         fictive_player_stats_array.append((val - min_value) / (max_value - min_value))
-    nb_of_player_to_compare_to_fictive = c3.selectbox('How many similar players do you want ? ', np.arange(1, 10, 1))
 
     similar_players_to_fictive = find_most_similar_player_by_criterias(fictive_player_stats_array, nb_of_player_to_compare_to_fictive, fictive_player_criterias_array)
 
@@ -226,6 +263,7 @@ if len(fictive_player_criterias_array) != 0:
 
     # Display
     c3.table(df_most_similar_players[["Player", "Similarity", "Age", "Salary", "PER"]])
-    c3.write(polygones)
+    #c3.write(polygones)
+    polygone_col_2.write(polygones)
 
-    c3.markdown("____")
+    #c3.markdown("____")

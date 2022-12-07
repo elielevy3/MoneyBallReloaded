@@ -5,11 +5,13 @@ Created on Sun Apr 11 13:14:15 2021
 
 @author: elie
 """
+from nbformat import write
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.spatial import distance
-# from Polygone import performance_polygon_vs_player
+import streamlit as st
+
 
 # list of players with all the stats we have
 stats = pd.read_csv("../csv/players_stats.csv")
@@ -26,6 +28,15 @@ def find_most_similar_player_by_criterias(player_stats, nb_most_similar, criteri
 
     # our distance matrix
     dist_mat_dict = {}
+    
+    # st.write(df)
+    # st.write(player_stats)
+
+    # st.write(type(df))
+    # st.write(type(player_stats))
+
+    if type(player_stats) != list: 
+        player_stats = player_stats.iloc[0] 
 
     for i in range(nb_of_players):
         dist = round(distance.euclidean(df.iloc[i], player_stats), 3)
@@ -118,6 +129,10 @@ def get_distance_between_players_with_criterias(list_of_players, criterias):
         # for every player, we compute distance with every other players to get the mix and max in order to normalize
         # for this given player
         player_stat = enlarged_criterias_df[enlarged_criterias_df["Player"] == player][criterias]
+        
+        if type(player_stat) != list: 
+            player_stat = player_stat.iloc[0] 
+
         for row in enlarged_criterias_df.itertuples():
             # remove the first column (the index) and the last one (name)
             row_stats = row[1:-1]

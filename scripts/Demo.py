@@ -10,7 +10,7 @@ import streamlit as st
 # To make things easier later, we're also importing numpy and pandas for working with sample data.
 import pandas as pd
 import numpy as np
-import unidecode
+import Unidecode
 from Polygone import performance_polygon_vs_player
 from Dissimilarity_Matrix import find_most_similar_player_by_criterias, get_distance_between_players_with_criterias
 
@@ -21,7 +21,7 @@ def clean_names(df, col_name):
     df[col_name] = df[col_name].apply(str.replace, args=[" Sr.", ""])
     df[col_name] = df[col_name].apply(str.replace, args=[" III", ""])
     df[col_name] = df[col_name].apply(str.replace, args=[" II", ""])
-    df[col_name] = df[col_name].apply(unidecode.unidecode)
+    df[col_name] = df[col_name].apply(Unidecode.unidecode)
     df[col_name] = df[col_name] = df[col_name].apply(str.replace, args=[".", ""])
     return df
 

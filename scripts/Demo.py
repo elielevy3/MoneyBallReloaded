@@ -13,7 +13,6 @@ import numpy as np
 import unidecode
 from Polygone import performance_polygon_vs_player
 from Dissimilarity_Matrix import find_most_similar_player_by_criterias, get_distance_between_players_with_criterias
-from pathlib import Path
 
 st.set_page_config(layout="wide", page_icon="🏀", page_title="MoneyBall Reloaded")
 
@@ -28,13 +27,11 @@ def clean_names(df, col_name):
 
 @st.experimental_memo
 def get_player_stats():
-    file_path = Path("../csv/players_stats.csv")
-    return pd.read_csv(file_path)
+    return pd.read_csv("../csv/players_stats.csv")
 
 @st.experimental_memo
 def get_player_salaries():
-    file_path = Path("../csv/players_salaries.csv")
-    return pd.read_csv(file_path)
+    return pd.read_csv("../csv/players_salaries.csv")
 
 
 stats = get_player_stats()

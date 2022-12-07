@@ -11,10 +11,13 @@ import matplotlib.pyplot as plt
 import matplotlib
 import matplotlib.path as path
 import matplotlib.patches as patches
+from pathlib import Path
+
 
 PlayerStats="MP"
 
-NormalizeData = pd.read_csv("../csv/players_stats.csv", delimiter =",");
+file_path = Path("../csv/players_salaries.csv")
+NormalizeData = pd.read_csv(file_path, delimiter =",");
 
 # a function which computes a performance polygon for a specific player using three parameters
 

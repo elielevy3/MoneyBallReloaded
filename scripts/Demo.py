@@ -83,6 +83,8 @@ if len(picked_criterias_array) == 0:
 
 st.write(
     "A doubt on what those criterias mean ? [Check this out](https://www.basketball-reference.com/about/glossary.html)")
+
+st.write("Want to check out the github repo ? [Help yourself](https://github.com/elielevy3/MoneyBallReloaded)")
 st.markdown("____")
 
 #c1, c3, c2 = st.tabs(["Find the most similar players to a player", "Describe the player you need", "Compare the players you want together"])

@@ -27,7 +27,7 @@ def clean_names(df, col_name):
 
 @st.experimental_memo
 def get_player_stats():
-    return pd.read_csv("../csv/players_stats.csv")
+    return pd.read_csv("./csv/players_stats.csv")
 
 @st.experimental_memo
 def get_player_salaries():

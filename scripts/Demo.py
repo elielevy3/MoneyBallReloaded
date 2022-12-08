@@ -31,7 +31,7 @@ def get_player_stats():
 
 @st.experimental_memo
 def get_player_salaries():
-    return pd.read_csv("../csv/players_salaries.csv")
+    return pd.read_csv("./csv/players_salaries.csv")
 
 
 stats = get_player_stats()

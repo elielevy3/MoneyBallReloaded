@@ -14,7 +14,7 @@ import streamlit as st
 
 
 # list of players with all the stats we have
-stats = pd.read_csv("csv/players_stats.csv")
+stats = pd.read_csv("../csv/players_stats.csv")
 
 
 def find_most_similar_player_by_criterias(player_stats, nb_most_similar, criterias):

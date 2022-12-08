@@ -14,7 +14,7 @@ import matplotlib.patches as patches
 
 PlayerStats="MP"
 
-NormalizeData = pd.read_csv("csv/players_stats.csv", delimiter =",");
+NormalizeData = pd.read_csv("./../csv/players_stats.csv", delimiter =",");
 
 # a function which computes a performance polygon for a specific player using three parameters
 

@@ -50,12 +50,12 @@ salaries.set_index("Player", inplace=True)
 stats = stats.join(salaries, how="left", on="Player")
 
 # get age of players
-players_age = pd.read_csv("../csv/NBA_totals_2019-2020.csv")[["Player", "Age"]]
+players_age = pd.read_csv("./csv/NBA_totals_2019-2020.csv")[["Player", "Age"]]
 players_age = clean_names(players_age, "Player")
 players_age = players_age.drop_duplicates()
 
 # get avg PER of every player on the last years
-players_per = pd.read_csv("../csv/unscaled_aggregated_stats.csv")
+players_per = pd.read_csv("./csv/unscaled_aggregated_stats.csv")
 players_per = players_per[["Player", "PER"]]
 
 # displaying
@@ -220,8 +220,8 @@ fictive_player_stats_pd = pd.DataFrame([fictive_player_stats_array])
 fictive_player_stats_pd.columns = fictive_player_criterias_array
 
 # now we need to min max scale this new fictive player for all of his feature
-unscaled_advanced_data = pd.read_csv("../csv/unscaled_aggregated_stats.csv")
-unscaled_basic_data = pd.read_csv("../csv/avg_stats_36_minutes_unscaled.csv")
+unscaled_advanced_data = pd.read_csv("./csv/unscaled_aggregated_stats.csv")
+unscaled_basic_data = pd.read_csv("./csv/avg_stats_36_minutes_unscaled.csv")
 
 fictive_player_stats_array = []
 
